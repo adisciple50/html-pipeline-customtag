@@ -48,7 +48,19 @@ puts result[:hashtags]
 # => ["world"]
 ```
 
+## Use With Other Tags - (User Tags Etc.)
+
+in your context you can match other tags to save you writing a whole new filter
+
+context = {
+  :tag_url => '/tags/%{tag}',
+  :hashtag_pattern => /@([\p{L}\w\-]+)/ #this will match an @tag - (credit to mr-dxdy for the original regex)
+ }
+
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/mr-dxdy/html-pipeline-hashtag.
+
+
 
